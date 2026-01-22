@@ -1,49 +1,48 @@
-# 🛒 Sales & Purchases System – ASP.NET MVC
+# 🛒 Sales & Purchases Management System – ASP.NET MVC
 
-This project is a **CRUD web application** developed in **C#** using **ASP.NET MVC**, **.NET 5.0**, and **Entity Framework Core**. The system manages **product sales and purchases**, following the MVC architectural pattern and clean code practices.
-
----
-
-## 🚀 Technologies
-
-* C#
-* .NET 5.0
-* ASP.NET MVC
-* Entity Framework Core
-* SQL Server
-* Razor Views
+This project is a **production-oriented CRUD web application** built with **C#**, **ASP.NET MVC**, **.NET 5.0**, and **Entity Framework Core**. It demonstrates solid experience with **enterprise web development**, applying clean architecture principles, separation of concerns, and maintainable code practices.
 
 ---
 
-## 🎯 Project Overview
+## 🚀 Tech Stack
 
-The goal of this project is to demonstrate:
-
-* CRUD operations (Create, Read, Update, Delete)
-* Database persistence with Entity Framework Core
-* MVC architecture organization
-* A maintainable and scalable web application
-
----
-
-## ⚙️ Main Features
-
-* Product registration
-* Product listing
-* Product editing
-* Product deletion
-* Sales records
-* Purchase records
+* **C# / .NET 5.0**
+* **ASP.NET MVC**
+* **Entity Framework Core** (Code First & Migrations)
+* **SQL Server**
+* **Razor Views**
+* **Bootstrap** (responsive UI)
 
 ---
 
-## ▶️ How to Run the Project Locally
+## 🎯 Project Purpose
+
+This project was designed to showcase **mid-level to senior-level skills** in .NET web development, including:
+
+* Implementation of **CRUD operations** following MVC best practices
+* Data persistence and abstraction using **Entity Framework Core**
+* Clear separation between **Controllers, Services, Models, and Data Access**
+* Scalable structure ready for future enhancements
+
+---
+
+## ⚙️ Key Features
+
+* Product management (Create, Read, Update, Delete)
+* Sales registration
+* Purchase registration
+* Relational database integration
+* Server-side validation and data consistency
+
+---
+
+## ▶️ Running the Project Locally
 
 ### Prerequisites
 
 * .NET SDK 5.0
 * Visual Studio 2019 or 2022
-* SQL Server (LocalDB or configured instance)
+* SQL Server (LocalDB or standalone instance)
 * Git
 
 ---
@@ -57,19 +56,19 @@ cd your-repository
 
 ---
 
-### Configure the Database
+### Database Configuration
 
 Update the connection string in `appsettings.json`:
 
 ```json
 "ConnectionStrings": {
-  "DefaultConnection": "Server=localhost;Database=SalesSystemDb;Trusted_Connection=True;"
+  "DefaultConnection": "Server=localhost;Database=SalesManagementDb;Trusted_Connection=True;"
 }
 ```
 
 ---
 
-### Apply Migrations
+### Apply Database Migrations
 
 ```bash
 dotnet ef database update
@@ -83,13 +82,22 @@ dotnet ef database update
 dotnet run
 ```
 
-Or press **F5** in Visual Studio.
+Or simply run the project using **F5** in Visual Studio.
 
 The application will be available at:
 
 ```
 https://localhost:5001
 ```
+
+---
+
+## 🧠 Engineering Highlights
+
+* MVC architectural pattern
+* Entity Framework Core with migrations
+* Clean and readable codebase
+* Easily extensible for authentication, authorization, and reporting
 
 ---
 
