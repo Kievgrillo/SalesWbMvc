@@ -1,0 +1,62 @@
+## =========================
+## Visual Studio
+## =========================
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## =========================
+## Build results
+## =========================
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+
+## =========================
+## ASP.NET Core
+## =========================
+appsettings.Development.json
+appsettings.Local.json
+
+## =========================
+## Logs
+## =========================
+*.log
+
+## =========================
+## Test results
+## =========================
+TestResults/
+*.trx
+
+## =========================
+## NuGet
+## =========================
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+!**/packages/repositories.config
+
+## =========================
+## Rider / VS Code (se usar)
+## =========================
+.idea/
+.vscode/
+
+## =========================
+## OS
+## =========================
+Thumbs.db
+ehthumbs.db
+.DS_Store
+
+## =========================
+## Publish
+## =========================
+publish/
