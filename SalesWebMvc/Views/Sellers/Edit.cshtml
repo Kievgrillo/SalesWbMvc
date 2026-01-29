@@ -42,3 +42,9 @@
         </form>
     </div>
 </div>
+
+@section scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
