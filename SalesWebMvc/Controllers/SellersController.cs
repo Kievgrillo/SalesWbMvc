@@ -76,12 +76,9 @@ namespace SalesWebMvc.Controllers
                 await _sellerService.RemoveAsync(id);
                 return RedirectToAction(nameof(Index));
             }
-            catch (DbUpdateException)
+            catch (IntegrityException e)
             {
-                return RedirectToAction(nameof(Error), new
-                {
-                    message = "Não é possível excluir este vendedor porque ele possui vendas registradas."
-                });
+                return RedirectToAction(nameof(Error), new { message = e.Message });   
             }
         }
 
